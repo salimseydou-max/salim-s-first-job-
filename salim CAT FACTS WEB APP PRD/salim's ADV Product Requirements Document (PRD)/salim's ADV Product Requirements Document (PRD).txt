@@ -1,0 +1,189 @@
+﻿Product Requirements Document (PRD)
+Product Name
+Advice Rating Webpage
+Purpose
+The purpose of the Advice Rating Webpage is to display random advice fetched from the Advice Slip API and allow users to rate how useful the advice is. The application provides a simple, fast, and interactive experience without requiring page refreshes.
+Goals & Objectives
+* Display one piece of random advice at a time
+
+* Allow users to rate advice as useful or not useful
+
+* Enable users to load new advice on demand
+
+* Provide instant feedback through smooth interactions
+
+* Handle API errors gracefully
+
+Target Users
+   * General users seeking quick advice
+
+   * Students or learners exploring API-based web applications
+
+   * Casual users interested in interactive web experiences
+
+Success Metrics
+      * Advice successfully fetched and displayed
+
+      * User ratings recorded without page refresh
+
+      * Error message displayed when API fails
+
+      * Fast and responsive button interactions
+
+________________
+
+
+Functional Requirements
+1. Advice Display
+         * The webpage must fetch advice from the Advice Slip API
+
+         * One piece of advice is displayed at a time
+
+         * Advice text is centered and clearly visible
+
+2. Rating System
+            * Users can rate advice using buttons:
+
+               * Useful
+
+               * Not Useful
+
+                  * Once a rating is selected:
+
+                     * The rating is recorded in JavaScript
+
+                     * The user may load new advice
+
+3. Load New Advice
+                        * A “New Advice” button fetches and displays another advice slip
+
+                        * No page refresh is required
+
+                        * Advice updates instantly
+
+4. Error Handling
+                           * If the API fails to respond:
+
+                              * An error message is displayed instead of advice
+
+                              * Users can retry fetching advice
+
+5. User Interaction
+                                 * All interactions occur via button clicks
+
+                                 * Feedback is immediate and clear
+
+                                 * UI updates dynamically using JavaScript
+
+________________
+
+
+Non-Functional Requirements
+Performance
+                                    * Advice loads within 1–2 seconds under normal conditions
+
+                                    * UI updates without page reload
+
+Usability
+                                       * Buttons are clearly labeled and easy to click
+
+                                       * Layout is intuitive and uncluttered
+
+                                       * Users always understand what action is available
+
+Accessibility
+                                          * Text is readable with sufficient contrast
+
+                                          * Buttons are large enough for easy interaction
+
+Compatibility
+                                             * Works on modern browsers (Chrome, Firefox, Edge, Safari)
+
+                                             * Responsive for desktop and mobile screens
+
+________________
+
+
+Design Requirements
+Layout
+                                                * Advice text centered on the page
+
+                                                * Buttons aligned and evenly spaced
+
+                                                * Clear visual hierarchy
+
+Styling
+                                                   * Minimal design
+
+                                                   * Neutral color palette
+
+                                                   * Simple, readable fonts
+
+Feedback
+                                                      * Visual confirmation when buttons are clicked
+
+                                                      * Clear error message when advice fails to load
+
+________________
+
+
+Technical Requirements
+Frontend
+                                                         * HTML: Page structure
+
+                                                         * CSS: Styling and layout
+
+                                                         * JavaScript:
+
+                                                            * Fetch API data
+
+                                                            * Handle user interaction
+
+                                                            * Manage UI updates
+
+API
+                                                               * Advice Slip API
+
+                                                               * Endpoint: https://api.adviceslip.com/advice
+
+________________
+
+
+Out of Scope
+                                                                  * User accounts or authentication
+
+                                                                  * Persistent data storage (ratings saved to a database)
+
+                                                                  * Advanced analytics or tracking
+
+________________
+
+
+Assumptions
+                                                                     * Internet connection is available
+
+                                                                     * Advice Slip API is publicly accessible
+
+                                                                     * Ratings are stored temporarily in memory only
+
+________________
+
+
+Future Enhancements (Optional)
+                                                                        * Track rating statistics
+
+                                                                        * Save ratings using local storage
+
+                                                                        * Add more rating options (e.g., 1–5 stars)
+
+                                                                        * Display previously rated advice
+
+________________
+
+
+If you want, I can also:
+                                                                           * Convert this into a PDF-ready format
+
+                                                                           * Simplify it for a college assignment
+
+                                                                           * Add user stories or wireframe descriptions

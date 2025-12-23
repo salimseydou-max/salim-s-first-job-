@@ -1,0 +1,131 @@
+﻿PRODUCT REQUIREMENT DOCUMENT (PRD)
+Product Name: Random Cat Fact Generator
+Version: 1.0
+________________
+
+
+1. Product Description
+The Random Cat Fact Generator is a simple web application that allows users to fetch and read random cat facts using the Cat Facts API. The application includes a styled display area for facts and a button that retrieves a new fact with each click.
+________________
+
+
+2. Core Objectives
+* Introduce students to using an API endpoint in a real product
+
+* Teach students how to interpret JSON data
+
+* Allow users to retrieve multiple facts with repeated button presses
+
+* Present information in a clean, readable format
+
+* Demonstrate asynchronous JavaScript behavior (fetch)
+
+________________
+
+
+3. Target Audiences / User Stories
+Primary Audience: Students and beginner-level coders.
+User Stories:
+   * As a user, I want to click a button to receive a random cat fact so I can learn something fun.
+
+   * As a user, I want to see a loading message so I know the API is working.
+
+   * As a user, I want to see the new fact replace the previous one so the page stays clean.
+
+   * As a user, I want the page to look friendly and playful.
+
+________________
+
+
+4. Key Features
+      * Button labeled “Get Cat Fact”
+
+      * Fetches a new fact using the Cat Facts API
+
+      * Displays fact inside a card container
+
+      * Loading message during API call
+
+      * Error message if API request fails
+
+      * Simple and playful UI design
+
+________________
+
+
+5. Technical Requirements
+Frontend: HTML, CSS, JavaScript
+API Endpoint:
+GET → https://catfact.ninja/fact
+Logic Requirements:
+         * Use JavaScript fetch() to access the API
+
+         * Parse the JSON response
+
+         * Extract the "fact" property
+
+         * Replace previous fact in the DOM
+
+         * Show/hide loading message
+
+Error Handling:
+            * Catch and display errors
+
+            * Default message if no fact is available
+
+________________
+
+
+6. API Documentation Links (Open Source)
+Cat Facts API
+Documentation: https://catfact.ninja/
+No key required.
+7. UX & Design Requirements
+Overall Experience
+The Random Cat Fact Generator should feel simple, playful, and delightful. The interaction flow must be intuitive and clear: users should always understand what the app is doing, whether it is loading content, showing results, or encountering an error.
+Responsive Layout
+The webpage must be fully responsive and adjust gracefully to different screen sizes so students understand how web pages transform into web apps.
+Requirements:
+               * Use a flexible layout (CSS Grid or Flexbox) that adapts on mobile, tablet, and desktop.
+
+               * All elements should remain centered and proportionally spaced on all screen sizes.
+
+               * The “Get Cat Fact” button must remain fully visible and accessible at all viewport sizes.
+
+               * Text containers should resize or wrap appropriately to maintain readability.
+
+               * Padding and margins should adjust based on screen width to maintain good spacing.
+
+               * The design should function cleanly inside a simulated mobile preview (e.g., browser dev tools).
+
+Visual Hierarchy
+                  * The fact display card should be the largest visual element on the page.
+
+                  * The button should be distinct and visually inviting.
+
+                  * Loading and error messages should appear in a subtle but clearly visible style beneath the button.
+
+Color & Style Guidelines
+                     * Use a playful pastel-themed color palette.
+
+                     * Button should use a bright accent color to encourage interaction.
+
+                     * Fact container should use a soft rounded card with a subtle drop shadow.
+
+                     * Typography should be clean and readable, ideally a sans-serif font.
+
+Interaction Feedback
+                        * Button press should include a micro-interaction (hover or active state).
+
+                        * Loading state should display immediately and be visually distinct from the cat fact.
+
+                        * Error messages should be friendly and reassuring (e.g., “Oops! Couldn’t fetch a fact. Try again!”).
+
+Accessibility
+                           * Provide sufficient color contrast between text and background.
+
+                           * Ensure interactive elements are large enough to tap on mobile screens.
+
+                           * All text must be readable on small screens.
+
+                           * Use semantic HTML for improved screen reader compatibility.
